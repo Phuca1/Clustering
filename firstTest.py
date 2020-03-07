@@ -1,6 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
-from scipy.spatial.distance import cdist
 
 np.random.seed(11)
 
@@ -87,22 +85,3 @@ for i in range(K):
         if cluster[j] == i :
             print(j)
 
-
-# cluster = []
-# for i in range(X.shape[0]):
-#      ind = find_cluster(X[i], cti)
-#      cluster.append(ind)
-#
-# print(cluster)
-# cluster = np.asarray(cluster)
-
-# cen = []
-# for i in range(K):
-#     a = X[cluster == i, :]
-#     b =np.mean(a,axis=0)
-#     cen.append(b)
-# cen = np.asarray(cen)
-# print(cen)
-
-# print(find_center(X,cluster,K))
-#vcl
